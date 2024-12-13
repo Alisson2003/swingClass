@@ -86,15 +86,5 @@ public class form1 {
                 JOptionPane.showMessageDialog(mainPanel, "Por favor ingrese un número válido.", "Error", JOptionPane.ERROR_MESSAGE);
                 return 0;
             }
-        }
-
-        private double requestExtraInput(String message) {
-            String input = JOptionPane.showInputDialog(mainPanel, message);
-            try {
-                return Double.parseDouble(input);
-            } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(mainPanel, "Entrada inválida. Usando valor 0.", "Advertencia", JOptionPane.WARNING_MESSAGE);
-                return 0;
-            }
     }
 }
